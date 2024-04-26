@@ -5,24 +5,18 @@ body {
     font: normal 15pt Arial;  
 }
 
-#headerContainer {
+.headerContainer {
     height: 89px;
     background: rgb(165,173,173);
     background: linear-gradient(90deg, rgba(165,173,173,1) 28%, rgba(95,153,153,1) 100%);
 }
-.title{
-    text-align: center;
-    color: whitesmoke;
-}
-.carousel-slide{
-    justify-content: center;
-}
+
 img {
     height: 89px;
     cursor: pointer;
     margin-right: 30px;
 }
-#headerContent {
+.headerContent {
     display: flex;
     align-items: center;
     max-width: 100%;
@@ -57,12 +51,12 @@ a:hover{
 }
 
 @media (max-width: 700px) {
-    #headerContainer {
+    .headerContainer {
         height: 176px;
         padding: 8px 0;
     }
 
-    #headerContent {
+    .headerContent {
         display: flex;
         flex-direction: column;
     }
@@ -76,6 +70,14 @@ a:hover{
     a ~ a {
         margin-left: 8px;
     }
+}
+
+.title{
+    text-align: center;
+    color: whitesmoke;
+}
+.carousel-slide{
+    justify-content: center;
 }
 
 
