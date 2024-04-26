@@ -1,17 +1,22 @@
 body {
     margin: 0;
-    background: rgb(23,33,42);
-    background: linear-gradient(90deg, rgba(23,33,42,1) 7%, rgba(77,112,144,1) 50%, rgba(23,33,42,1) 94%);
+    background: rgb(77,112,144);
+    background: linear-gradient(90deg, rgba(77,112,144,1) 0%, rgba(23,33,42,1) 0%);
     font: normal 15pt Arial;  
 }
-
 
 #headerContainer {
     height: 89px;
     background: rgb(165,173,173);
     background: linear-gradient(90deg, rgba(165,173,173,1) 28%, rgba(95,153,153,1) 100%);
 }
-
+.title{
+    text-align: center;
+    color: whitesmoke;
+}
+.carousel-slide{
+    justify-content: center;
+}
 img {
     height: 89px;
     cursor: pointer;
