@@ -76,9 +76,11 @@ a:hover{
     text-align: center;
     color: whitesmoke;
 }
-.carousel-slide{
-    justify-content: center;
-}
+
+.carousel-item img {
+    margin: auto;
+    display: block;
+  }
 
 
 
