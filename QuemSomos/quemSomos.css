@@ -111,13 +111,15 @@ p {
     .foto-grupo {
     height: 500px;
     width: auto;
+    border: 15px double ;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.50);
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
 @media (max-width: 1420px) {
     .foto-grupo {
         width: 600px;
+        height: 400px;
     }
 }
 
