@@ -18,3 +18,69 @@
             </nav>
         </div>
     </header>
+    <header>
+        <h1>Museu Imperial</h1>
+    </header>
+
+    <div class="conteudo">
+        <div class="texto">
+            <p>
+                O Museu Imperial em Petrópolis é um dos mais importantes museus históricos do Brasil, localizado na cidade de Petrópolis, <br/>
+                no estado do Rio de Janeiro. O museu está instalado no antigo Palácio Imperial, que foi residência de verão do <br/>
+                imperador Dom Pedro II durante o século XIX.<br/><br/>
+
+                O edifício do Museu Imperial é uma obra arquitetônica magnífica, construída em estilo neoclássico, e abriga um valioso acervo <br/>
+                relacionado à história do Brasil Império. Ao visitar o museu, os visitantes têm a oportunidade de explorar os salões decorados <br/>
+                com mobiliário original, obras de arte, objetos pessoais da família imperial, documentos históricos, e uma extensa coleção de itens <br/>
+                relacionados à vida cotidiana e à cultura da corte imperial.<br/><br/>
+
+                Dentre as principais atrações do Museu Imperial estão o trono de Dom Pedro II, a coroa imperial, vestimentas da família imperial, <br/>
+                a Carruagem de Gala da Princesa Isabel, pinturas históricas, e diversos artefatos que proporcionam uma visão detalhada da época <br/>
+                do império no Brasil.<br/><br/>
+
+                Além das exposições permanentes, o Museu Imperial promove atividades educativas, palestras, e eventos culturais ao longo do ano, <br/>
+                oferecendo uma experiência enriquecedora para todos os públicos interessados na história e na cultura brasileira do século XIX.
+            </p>
+        </div>
+        <div class="carrossel">
+            <div class="slide">
+                <img src="Fotos/MuseuImperial/1.jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="Fotos/MuseuImperial/2.jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="Fotos/MuseuImperial/3.jpg" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="Fotos/MuseuImperial/4.jpg" alt="Imagem 4">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function mostrarSlide() {
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+
+            slides[slideIndex].style.display = 'block';
+        }
+
+        function proximoSlide() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            mostrarSlide();
+        }
+
+        setInterval(proximoSlide, 3000);
+
+        mostrarSlide();
+    </script>
+
+</body>
+</html>

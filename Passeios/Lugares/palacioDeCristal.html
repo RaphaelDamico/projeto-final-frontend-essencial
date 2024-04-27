@@ -18,3 +18,70 @@
             </nav>
         </div>
     </header>
+    <header>
+        <h1>Palácio de Cristal</h1>
+    </header>
+
+    <div class="conteudo">
+        <div class="texto">
+            <p>
+                O Palácio de Cristal é uma construção histórica e emblemática localizada na cidade de Petrópolis, no estado do Rio de Janeiro. <br/>
+                Ele foi inspirado no Palácio de Cristal de Londres e foi encomendado pelo Conde d'Eu, marido da Princesa Isabel, para ser utilizado <br/>
+                como um pavilhão de exposições durante a visita da família imperial brasileira à região.<br/><br/>
+
+                Construído em 1884, o Palácio de Cristal é uma estrutura de ferro e vidro, com um design elegante e características arquitetônicas <br/>
+                que refletem o estilo da Belle Époque. A estrutura possui um formato semelhante a uma estufa ou conservatório, com uma impressionante <br/>
+                estrutura metálica revestida por painéis de vidro, permitindo a entrada de luz natural e proporcionando uma atmosfera encantadora para <br/>
+                os eventos realizados no local.<br/><br/>
+
+                Durante o período imperial, o Palácio de Cristal foi palco de importantes exposições de flores, plantas, artes, e produtos industriais. <br/>
+                Atualmente, ele continua sendo utilizado para eventos culturais, exposições temporárias, feiras e festivais, sendo um dos principais <br/>
+                espaços culturais e turísticos de Petrópolis.<br/><br/>
+
+                A localização do Palácio de Cristal, em meio aos jardins e ao paisagismo cuidadosamente planejado, cria um ambiente tranquilo e elegante <br/>
+                que atrai moradores locais e visitantes. É um ponto de referência histórico e arquitetônico importante na cidade, representando a influência <br/>
+                da cultura e da arte europeia na sociedade brasileira do século XIX.
+            </p>
+        </div>
+        <div class="carrossel">
+            <div class="slide">
+                <img src="Fotos/PalacioDeCristal/1.jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="Fotos/PalacioDeCristal/2.jpg" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="Fotos/PalacioDeCristal/3.jpeg" alt="Imagem 3">
+            </div>
+            <div class="slide">
+                <img src="Fotos/PalacioDeCristal/4.jpg" alt="Imagem 4">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function mostrarSlide() {
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+
+            slides[slideIndex].style.display = 'block';
+        }
+
+        function proximoSlide() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            mostrarSlide();
+        }
+
+        setInterval(proximoSlide, 3000);
+
+        mostrarSlide();
+    </script>
+
+</body>
+</html>

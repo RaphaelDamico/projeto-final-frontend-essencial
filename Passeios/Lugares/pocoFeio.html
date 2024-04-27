@@ -18,3 +18,57 @@
             </nav>
         </div>
     </header>
+    <header>
+        <h1>Poço Feio</h1>
+    </header>
+
+    <div class="conteudo">
+        <div class="texto">
+            <p>
+                O Poço Feio em Nova Friburgo é uma atração natural situada na região serrana do estado do Rio de Janeiro.<br/>
+                É conhecido como "Poço Feio" devido ao nome popular da localidade, que pode ser uma referência à aparência mais selvagem <br/>
+                e rústica do local em comparação com outras áreas mais turísticas.<br/><br/>
+                Este poço provavelmente é uma formação natural com características geológicas particulares, possivelmente uma piscina natural, <br/>
+                cachoeira, ou parte de um riacho ou curso d'água na região. É importante notar que o termo "feio" pode ser usado de forma irônica<br/>
+                ou local, sem indicar uma condição desagradável, mas sim uma característica original e inexplorada.
+            </p>
+        </div>
+        <div class="carrossel">
+            <div class="slide">
+                <img src="Fotos/PocoFeio/1.jpg" alt="Imagem 1">
+            </div>
+            <div class="slide">
+                <img src="Fotos/PocoFeio/2.png" alt="Imagem 2">
+            </div>
+            <div class="slide">
+                <img src="Fotos/PocoFeio/3.jpeg" alt="Imagem 3">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function mostrarSlide() {
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+
+            slides[slideIndex].style.display = 'block';
+        }
+
+        function proximoSlide() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            mostrarSlide();
+        }
+
+        setInterval(proximoSlide, 3000);
+
+        mostrarSlide();
+    </script>
+
+</body>
+</html>
