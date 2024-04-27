@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font: normal 15pt Arial;
+}
+
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 0;
+}
+
+
+.headerContainer {
+    height: 89px;
+    background: rgb(165,173,173);
+    background: linear-gradient(90deg, rgba(165,173,173,1) 28%, rgba(95,153,153,1) 100%);
+}
+
+img {
+    height: 89px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.headerContent {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 89px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.texto {
+    width: 45%;
+}
+
+.carrossel {
+    width: 50%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide.ativo {
+    display: block;
+}
