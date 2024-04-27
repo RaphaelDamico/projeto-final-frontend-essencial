@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    background: rgb(23,33,42);
-    background: linear-gradient(90deg, rgba(23,33,42,1) 7%, rgba(77,112,144,1) 50%, rgba(23,33,42,1) 94%);
+   /*  background: rgb(23,33,42);
+    background: linear-gradient(90deg, rgba(23,33,42,1) 7%, rgba(77,112,144,1) 50%, rgba(23,33,42,1) 94%); */
+    background: #F0FFF0;
     font: normal 15pt Arial;  
 }
 
@@ -73,6 +74,62 @@ a:hover{
     }
 }
 
+@media (max-width: 450px) {
+    a {
+        font-size: 13pt;
+    }
+}
+
+.title {
+    padding: 10px;
+    color: #000;
+    text-align: center;
+}
+
+.caixa-texto {
+    background: #d3d3d3;
+    border-radius: 20px;
+    padding: 15px;
+    width: 600px;
+    margin: 10px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.50);
+}
+
+p {
+    font-family: "Parisienne", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20pt;
+}
+
+.bodyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    .foto-grupo {
+    height: 500px;
+    width: auto;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.50);
+    border-radius: 20px;
+}
+
+@media (max-width: 1420px) {
+    .foto-grupo {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .foto-grupo {
+        display: none;
+    }
+
+    .caixa-texto {
+        margin: auto;
+    }
+}
 
 
 
