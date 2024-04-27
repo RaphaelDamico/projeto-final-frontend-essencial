@@ -111,14 +111,14 @@ p {
     border-radius: 8px;
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1600px) {
     .foto-grupo {
         width: 600px;
         height: 400px;
     }
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1420px) {
     .foto-grupo {
         display: none;
     }
