@@ -80,12 +80,6 @@ a:hover{
     }
 }
 
-.title {
-    padding: 10px;
-    color: #000;
-    text-align: center;
-}
-
 .caixa-texto {
     background: #d3d3d3;
     border-radius: 20px;
@@ -106,6 +100,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 50px;
 }
 
     .foto-grupo {
@@ -130,6 +125,16 @@ p {
 
     .caixa-texto {
         margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .bodyContainer {
+        padding:0;
+    }
+
+    .caixa-texto {
+        border-radius: 0;
     }
 }
 
