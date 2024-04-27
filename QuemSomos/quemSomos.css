@@ -80,12 +80,6 @@ a:hover{
     }
 }
 
-.title {
-    padding: 10px;
-    color: #000;
-    text-align: center;
-}
-
 .caixa-texto {
     background: #d3d3d3;
     border-radius: 20px;
@@ -106,28 +100,41 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 50px;
 }
 
     .foto-grupo {
     height: 500px;
     width: auto;
+    border: 15px double ;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.50);
-    border-radius: 20px;
+    border-radius: 8px;
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1600px) {
     .foto-grupo {
         width: 600px;
+        height: 400px;
     }
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1420px) {
     .foto-grupo {
         display: none;
     }
 
     .caixa-texto {
         margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .bodyContainer {
+        padding:0;
+    }
+
+    .caixa-texto {
+        border-radius: 0;
     }
 }
 
