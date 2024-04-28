@@ -1,8 +1,6 @@
 body {
     margin: 0;
-    background: rgb(23,33,42);
-    background: linear-gradient(90deg, rgba(23,33,42,1) 7%, rgba(77,112,144,1) 50%, rgba(23,33,42,1) 94%);
-    font: normal 15pt Arial;  
+    font: normal 15pt Arial;
 }
 
 
@@ -74,7 +72,7 @@ a:hover{
 }
 
 .passeios-container {
-    max-width: 800px;
+    max-width: fit-content;
     margin: 0 auto;
     padding: 20px;
 }
@@ -91,16 +89,44 @@ a:hover{
     height: 150px;
     border-radius: 15px;
     border: 3px solid white;
+    margin: 2.5%;
 }
 
 .passeio-nome {
-    margin-top: 10px;
-    font-weight: bold;
-    color: black;
+    padding: 0px;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Caveat", cursive;
+    letter-spacing: 2px;
+    margin: -1%;
+    line-height: 30px;
+    text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 2px  2px 0 #000;
 }
 
+.passeio-cidade{
+    font-size: 13px;
+}
 
-
-
+h1 {
+    width: 100vw;
+    background: linear-gradient(to right, #45054b, #fca2f0);
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Caveat", cursive;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #dadada;
+    border-top: 4px solid #dadada;
+    text-shadow:
+                -1px -1px 0 #000,
+                 1px -1px 0 #000,
+                -1px  1px 0 #000,
+                 2px  2px 0 #000;
+}
 
 
