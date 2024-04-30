@@ -71,7 +71,9 @@
         <script>
             let slideIndex = 0;
             const slides = document.querySelectorAll('.slide');
-
+            function cadastrar(){
+            alert("Formulario Enviado!")
+            }  
             function mostrarSlide() {
                 slides.forEach(slide => {
                     slide.style.display = 'none';
@@ -92,6 +94,58 @@
 
             mostrarSlide();
         </script>
+
+<section class="caixa-texto">
+    <form>
+        <p> Dados Obrigatorios <abbr title="required">*</abbr>.</p>
+      
+       <div>
+         <label for="CaoSentado">Name Completo:</label>
+         <input type="text" name="username" placeholder="Digite seu nome">
+         <label for="CaoSentado"><abbr title="required">*</abbr></label>
+       </div>
+    
+       <div>
+           <label for="CaoSentado">Telefone:</label>
+           <input type="tel" name="Telefone"placeholder="(99)123456789">
+           <label for="CaoSentado"><abbr title="required">*</abbr></label>
+       </div>
+    
+       <div>
+           <label for="CaoSentado">Email:</label>
+           <input type="email" name="Email" placeholder="exemplo@exemplo.com">
+           <label for="CaoSentado"><abbr title="required">*</abbr></label>
+       </div>
+    
+       <div>
+           <label for="CaoSentado">Data:</label>
+           <input type="date" name="date">
+           <label for="CaoSentado"><abbr title="required">*</abbr></label>
+       </div>
+       
+       <p>
+           <label for="taste_1">Raffting</label>
+           <input type="checkbox" id="taste_1" name="raffting" value="1">
+           <label for="taste_2">Acampamento</label>
+           <input type="checkbox" id="taste_2" name="acampamento" value="2">
+           <label for="taste_3">Visita Turistica</label>
+           <input type="checkbox" id="taste_3" name="visita" value="3">
+           <label for="CaoSentado"></label>
+       </p>
+       
+       <button type="button" class="btn btn-outline-success"
+       onclick="cadastrar()"
+       >
+       Enviar</button>
+    <p>
+        Entraremos em contato para terminar o agendamento 
+    </p>
+
+    </form>
+    </section>
+    
+    
+    
 
     </body>
     </html>
