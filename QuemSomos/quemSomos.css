@@ -7,7 +7,7 @@ body::before {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-image: url('/Passeios/Lugares/Fotos/fundoceu.jpg');
+    background-image: url('/images/Background-pagina/background.jpg');
     background-size: cover;
     background-position: center;
     filter: brightness(80%) contrast(80%) blur(0px) opacity(85%) grayscale(10%);
