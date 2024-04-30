@@ -12,7 +12,7 @@ body::before {
 
 .conteiner{
     background-color: #f7f7f7;
-    max-width: 600px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
@@ -23,20 +23,23 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     font: normal 15pt Arial;
-
+    font-size: 15pt;
 }
-
 
 .title {
     font-family: "Roboto", sans-serif;
-    color: #4D8989;
+    color: #dfdfdf;
     font-weight: 100;
     font-style: normal;
-    padding-top: 20vh;
+    max-width: 100%;
+    padding-bottom: 12vh;
+    padding-top: 30vh;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(11, 75, 11, 0.5);
 }
 .carousel-item img {
     margin: auto;
+    max-width: 100%;
     padding-bottom: 20vh;
     display: block;
 }
