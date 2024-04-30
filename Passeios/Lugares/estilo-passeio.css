@@ -4,20 +4,23 @@ body {
 }
 
 h1 {
-    background: linear-gradient(to right, #45054b, #fca2f0);
-    color: #fff;
-    padding: 0px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    position: fixed;
+    color: #fff;
+    padding: 0x;
     font-size: 50px;
     font-family: "Caveat", cursive;
     letter-spacing: 2px;
-    border-bottom: 4px solid #dadada;
-    border-top: 4px solid #dadada;
     text-shadow:
                 -1px -1px 0 #000,
                  1px -1px 0 #000,
                 -1px  1px 0 #000,
                  4px  2px 0 #000;
+    filter: brightness(75%) contrast(75%) blur(0px) grayscale(40%) opacity(0.6);
+    z-index: -1;
 }
 
 
@@ -45,6 +48,7 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin-top: 7.5%;
 }
 
 .texto {
