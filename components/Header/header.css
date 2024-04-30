@@ -40,14 +40,12 @@ a ~ a {
 .link-nav:hover{
     transition: 0.2s;
     transform: scale(1.1);
-    text-decoration: 2px underline ;
-    text-underline-offset: 4px;
 }
 
-.headerContainer::-webkit-scrollbar {
-    display: none;
+#ativa {
+    text-decoration: 0.125rem underline ;
+    text-underline-offset: 0.25rem;
 }
-
 
 @media (max-width: 710px) {
     .headerContainer {
