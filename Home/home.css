@@ -32,17 +32,125 @@ body {
     font-weight: 100;
     font-style: normal;
     max-width: 100%;
-    padding-bottom: 12vh;
-    padding-top: 30vh;
+    padding-bottom: 11vh;
+    padding-top: 25vh;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(11, 75, 11, 0.5);
 }
+
 .carousel-item img {
     margin: auto;
     max-width: 100%;
     padding-bottom: 20vh;
     display: block;
 }
-.footer{
+:root {
+    --neutral-color-1: #333; 
+    --neutral-color-2: #757976; 
+    --neutral-color-3: rgb(29, 29, 29); 
+    --neutral-color-4: rgb(19, 19, 19);
+    
+}
 
+.footer {
+    width: 100%;
+    background-color: var(--neutral-color-2);
+    display: flex;
+    flex-wrap: wrap; /* Para permitir que os elementos sejam empilhados em uma nova linha */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#footer_content{
+    font-family: "Roboto", sans-serif;
+    color: #dfdfdf;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: var(--neutral-color-3);
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    padding: 1.5rem 1.5rem;
+    flex-basis: 70%;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+#footer-social-media {
+    display: flex;
+    gap: 1rem;
+}
+#footer-social-media .footer_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.0rem;
+    width: 2.0rem;
+    color: var(--neutral-color-2);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer-social-media .footer_link:hover{
+    opacity: 0.8;
+}
+
+#instagram{
+   background: linear-gradient(#7f37c9,#ff2992, #ff9807);
+}
+
+#facebook{
+   background-color: #1f22d3;
+}
+
+#github{
+    background-color: #98989c;
+}
+.footer-list{
+   display:flex;
+   flex-direction: column; 
+   gap: 0.75rem;
+   list-style: none;
+}
+.footer-link{
+    text-decoration: none;
+}
+.footer-list .footer-link {
+    color: var(--neutral-color-2);
+}
+.footer-list .footer-link:hover{
+    color: #7f37c9;
+}
+#input_group{
+    align-items: center;
+    background-color: var(--neutral-color-2);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    right: 80%;
+    flex-basis: 20%;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--neutral-color-4);
+    font-size: 0.9rem;
+    padding: 1rem;
+    font-weight: 100;
+    grid-area: footerCopyright;
+    flex-basis: 100%; 
+}
+
+#footer_content {
+    grid-template-areas: 
+        "socialMedia socialMedia socialMedia socialMedia"
+        "contact contact contact contact"
+        "rights rights rights rights"
+        "footerCopyright footerCopyright footerCopyright footerCopyright";
 }
