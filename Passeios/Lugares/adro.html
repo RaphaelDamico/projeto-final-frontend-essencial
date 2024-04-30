@@ -9,14 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/components/Header/header.css">
     <style>
         body::before {
             content: "";
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             background-image: url('/images/Background-pagina/background.jpg');
             background-size: cover;
             background-position: center;
@@ -26,21 +25,12 @@
     </style>
 </head>
 <body>
-    <header class="headerContainer">
-        <div class="headerContent">
-            <img src="/Home/assets/logo-serra-tour.png" alt="logo da pagina">
-            <nav>
-                <a href="/Home/home.html">Home</a>
-                <a href="/Passeios/passeios.html">Passeios</a>
-                <a href="/QuemSomos/quemSomos.html">Quem somos</a>
-            </nav>
-        </div>
-    </header>
-    <header>
-        <h1>Adro</h1>
-    </header>
-
-    <div class="conteudo">
+    <script src="/components/Header/header.js"></script>
+<script>
+    mostraHeader();
+</script>
+<div class="conteudo">
+        <h1 class="titulo-pagina">Adro</h1>
         <div class="carrossel">
             <div class="slide">
                 <img src="/images/ImagensLugares/Adro/1.png" alt="Adro 1">
@@ -87,6 +77,5 @@
 
         mostrarSlide();
     </script>
-
 </body>
 </html>

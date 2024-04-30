@@ -1,7 +1,7 @@
 function Header() {
     const header = document.createElement('header');
     header.innerHTML = `
-        <div id="navbar" class="headerContainer">
+        <div class="headerContainer">
             <div class="headerContent">
                 <img class="logo-pagina" src="/Home/assets/logo-serra-tour.png" alt="logo da pagina" />
                 <nav>
@@ -20,19 +20,4 @@ function mostraHeader() {
     const body = document.querySelector('body');
     body.insertBefore(header, body.firstChild);
 }
-
-
-    var lastScrollTop = 0;
-    navBar = document.getElementById('navbar');
-    window.addEventListener("scroll", function escondeHeader() {
-        var lastScrollTop = window.scrollY || document
-            .documentElement.scrollTop;
-            if(scrollTop > lasScrollTop) {
-                navBar.style.top = "-15vh";
-            } else {
-                navBar.style.top = "0";
-            }
-            lastScrollTop = scrollTop;
-        })
-
 
