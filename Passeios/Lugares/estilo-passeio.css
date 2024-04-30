@@ -19,7 +19,6 @@ h1 {
                  1px -1px 0 #000,
                 -1px  1px 0 #000,
                  4px  2px 0 #000;
-    filter: brightness(75%) contrast(75%) blur(0px) grayscale(40%) opacity(0.6);
     z-index: -1;
 }
 
