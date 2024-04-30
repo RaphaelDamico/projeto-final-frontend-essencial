@@ -1,101 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/Home/assets/favicon-16x16.png" type="image/x-icon">
-    <title>Passeios</title>
-    <link rel="stylesheet" href="passeios.css">
-    <style>
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('/images/Background-pagina/background.jpg');
-            background-size: cover;
-            background-position: center;
-            filter: brightness(80%) contrast(80%) blur(0px) opacity(85%) grayscale(10%);
-            z-index: -1;
-        }
-    </style>
-</head>
-<body>
-    <header class="headerContainer">
-        <div class="headerContent">
-            <img src="/Home/assets/logo-serra-tour.png" alt="logo da pagina">
-            <nav>
-                <a href="/Home/home.html">Home</a>
-                <a href="/Passeios/passeios.html">Passeios</a>
-                <a href="/QuemSomos/quemSomos.html">Quem somos</a>
-            </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/Home/assets/favicon-16x16.png" type="image/x-icon">
+        <title>Passeios</title>
+        <link rel="stylesheet" href="passeios.css">
+        <style>
+            body::before {
+                content: "";
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                background-image: url('/images/Background-pagina/background.jpg');
+                background-size: cover;
+                background-position: center;
+                filter: brightness(80%) contrast(80%) blur(0px) opacity(85%) grayscale(10%);
+                z-index: -1;
+            }
+        </style>
+        <link rel="stylesheet" href="/components/Header/header.css">
+    </head>
+    <body>
+        <script src="/components/Header/header.js"></script>
+        <script>
+            mostraHeader();
+        </script>
+        <div class="passeios-container">
+            <div class="passeios-content">
+                    <a class="link-passeios" href="Lugares/caoSentado.html">
+                        <h2 class="passeio-nome">Cão Sentado</h2>
+                        <p class="passeio-cidade">Nova Friburgo</p>
+                        <img class="img-ponto-turistico" src="/images/ImagensPasseios/caoSentado.png" alt="Pedra do Cão Sentado">
+                    </a>
+                </div>
+            <div class="passeios-content">
+                <a class="link-passeios" href="Lugares/pocoFeio.html">
+                    <h2 class="passeio-nome">Poço Feio</h2>
+                    <p class="passeio-cidade">Nova Friburgo</p>
+                    <img class="img-ponto-turistico" src="/images/ImagensPasseios/pocoFeio.png" alt="Poço Feio">
+                </a>
+            </div>
+            <div class="passeios-content">
+                <a class="link-passeios" href="Lugares/adro.html">
+                    <h2 class="passeio-nome">Adro</h2>
+                    <p class="passeio-cidade">Cordeiro</p>
+                    <img class="img-ponto-turistico" src="/images/ImagensPasseios/adro.png" alt="Jardim do Adro: natureza, beleza e sossego no centro de Cordeiro">
+                </a>
+            </div>
+            <div class="passeios-content">
+                <a class="link-passeios" href="Lugares/palacioDeCristal.html">
+                    <h2 class="passeio-nome">Palácio de Cristal</h2>
+                    <p class="passeio-cidade">Petrópolis</p>
+                    <img class="img-ponto-turistico" src="/images/ImagensPasseios/palacioDeCristal.png" alt="Palácio de Cristal e Petrópolis">
+                </a>
+            </div>
+            <div class="passeios-content">
+                <a class="link-passeios" href="Lugares/caoSentado.html">
+                    <h2 class="passeio-nome">Country Clube</h2>
+                    <p class="passeio-cidade">Nova Friburgo</p>
+                    <img class="img-ponto-turistico" src="/images/ImagensPasseios/countryClube.png" alt="Nova Friburgo Country Clube, um lugar inesquecível">
+                </a>
+            </div>
+            <div class="passeios-content">
+                <a class="link-passeios" href="Lugares/caoSentado.html">
+                    <h2 class="passeio-nome">Museu Imperial</h2>
+                    <p class="passeio-cidade">Petrópolis</p>
+                    <img class="img-ponto-turistico" src="/images/ImagensPasseios/museuImperial.png" alt="Museu Imperial em Petrópolis">
+                </a>
+            </div>
         </div>
-    </header>
-    <h1>Passeios</h1>
-    <div class="passeios-container">
-        <div class="passeio">
-            <a href="Lugares/caoSentado.html">
-                <div class="passeio-nome">
-                    Cão Sentado
-                        <div class="passeio-cidade">
-                            Nova Friburgo
-                </div></div>
-                <img src="/images/ImagensPasseios/caoSentado.png" alt="Cão Sentado">
-            </a>
-        </div>
-        <div class="passeio">
-            <a href="Lugares/pocoFeio.html">
-                <div class="passeio-nome">
-                    Poço Feio
-                        <div class="passeio-cidade">
-                            Nova Friburgo
-                </div></div>
-                <img src="/images/ImagensPasseios/pocoFeio.png" alt="Poço Feio">
-            </a>
-        </div>
-        <div class="passeio">
-            <a href="Lugares/adro.html">
-                <div class="passeio-nome">
-                    Adro
-                        <div class="passeio-cidade">
-                            Cordeiro
-                </div></div>
-                <img src="/images/ImagensPasseios/adro.png" alt="Adro">
-            </a>
-        </div>
-        <div class="passeio">
-            <a href="Lugares/palacioDeCristal.html">
-                <div class="passeio-nome">
-                    Palácio de Cristal
-                        <div class="passeio-cidade">
-                            Petrópolis
-                </div></div>
-                <img src="/images/ImagensPasseios/palacioDeCristal.png" alt="Palácio de Cristal">
-            </a>
-        </div>
-        <div class="passeio">
-            <a href="Lugares/countryClube.html">
-                <div class="passeio-nome">
-                    Country Clube
-                        <div class="passeio-cidade">
-                            Nova Friburgo
-                </div></div>
-                <img src="/images/ImagensPasseios/countryClube.png" alt="Country Clube">
-            </a>
-        </div>
-        <div class="passeio">
-            <a href="Lugares/museuImperial.html">
-                <div class="passeio-nome">
-                    Museu Imperial
-                        <div class="passeio-cidade">
-                            Petrópolis
-                </div></div>
-                <img src="/images/ImagensPasseios/museuImperial.png" alt="Museu Imperial">
-            </a>
-        </div>
-    </div>
-
-</body>
+    </body>
 </html>
