@@ -5,7 +5,7 @@ function Header() {
             <div class="headerContent">
                 <img class="logo-pagina" src="/Home/assets/logo-serra-tour.png" alt="logo da pagina" />
                 <nav>
-                    <a class="link-nav" href="/Home/home.html">HOME</a>
+                    <a class="link-nav" id="ativa" href="/Home/home.html">HOME</a>
                     <a class="link-nav" href="/Passeios/passeios.html">PASSEIOS</a>
                     <a class="link-nav" href="/QuemSomos/quemSomos.html">QUEM SOMOS</a>
                 </nav>
