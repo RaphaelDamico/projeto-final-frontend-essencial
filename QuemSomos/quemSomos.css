@@ -28,8 +28,14 @@ body::before {
     height: 28.375rem;
     border-radius: 20px;
     border: 0.25rem solid #FFF;
-    opacity: calc(0.9);
+    opacity: calc(0.85);
     z-index: auto;
+}
+
+.img-grupo:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+    opacity: 1;
 }
 
 .caixa-texto {
@@ -40,6 +46,12 @@ body::before {
     font-size: 15pt;
     width: 37.5rem;
     height: auto;
+}
+
+.caixa-texto:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+    cursor: default;
 }
 
 .caixa-texto p {

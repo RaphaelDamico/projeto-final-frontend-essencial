@@ -10,7 +10,13 @@
 
 .logo-pagina {
     height: 80px;
-    cursor: pointer;
+}
+
+.logo-pagina:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: default;
+    box-shadow: 3px 3px 3px 0.5;
 }
 
 .headerContent {
