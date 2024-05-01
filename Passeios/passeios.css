@@ -52,26 +52,18 @@ h1 {
     color: #FFF;
     cursor: default;
     margin-bottom: -1%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
-    text-shadow:
-                -1px -1px 0 #000,
-                1px -1px 0 #000,
-                -1px  1px 0 #000,
-                2px  2px 0 #000;
+    text-shadow: 2px 2px 4px rgba(11, 75, 11, 0.5);
 }
 
 .passeio-cidade {
     color: #FFF;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
     text-align: center;
-    text-shadow:
-                -1px -1px 0 #000,
-                1px -1px 0 #000,
-                -1px  1px 0 #000,
-                2px  2px 0 #000;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 4px rgba(11, 75, 11, 0.5);
 }
 
 .link-passeios {
