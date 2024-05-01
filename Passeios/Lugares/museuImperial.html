@@ -10,25 +10,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/components/Header/header.css">
-        <style>
-            body::before {
-                content: "";
-                position: fixed;
-                width: 100vw;
-                height: 100vh;
-                background-image: url('/images/Background-pagina/background.jpg');
-                background-size: cover;
-                background-position: center;
-                filter: brightness(80%) contrast(80%) blur(0px) opacity(85%) grayscale(10%);
-                z-index: -1;
-            }
-        </style>
-    </head>
-    <body>
-        <script src="/components/Header/header.js"></script>
-        <script>
-            mostraHeader();
-        </script>
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('/images/Background-pagina/background.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(80%) contrast(80%) blur(0px) opacity(85%) grayscale(10%);
+            z-index: -1;
+        }
+    </style>
+    <link rel="stylesheet" href="/components/Header/header.css">
+</head>
+<body>
+    <header class="headerContainer">
+        <div class="headerContent">
+            <img class="logo-pagina" src="/Home/assets/logo-serra-tour.png" alt="logo da pagina" />
+            <nav>
+                <a class="link-nav" href="/Home/home.html">HOME</a>
+                <a class="link-nav" id="ativa" href="/Passeios/passeios.html">PASSEIOS</a>
+                <a class="link-nav"  href="/QuemSomos/quemSomos.html">QUEM SOMOS</a>
+            </nav>
+        </div>
+    </header>
         <div class="conteudo">
             <h1 class="titulo-pagina">Museu Imperial</h1>
             <div class="carrossel">

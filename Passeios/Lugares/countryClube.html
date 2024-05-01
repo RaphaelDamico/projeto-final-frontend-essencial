@@ -23,12 +23,19 @@
             z-index: -1;
         }
     </style>
+    <link rel="stylesheet" href="/components/Header/header.css">
 </head>
 <body>
-    <script src="/components/Header/header.js"></script>
-    <script>
-        mostraHeader();
-    </script>
+    <header class="headerContainer">
+        <div class="headerContent">
+            <img class="logo-pagina" src="/Home/assets/logo-serra-tour.png" alt="logo da pagina" />
+            <nav>
+                <a class="link-nav" href="/Home/home.html">HOME</a>
+                <a class="link-nav" id="ativa" href="/Passeios/passeios.html">PASSEIOS</a>
+                <a class="link-nav"  href="/QuemSomos/quemSomos.html">QUEM SOMOS</a>
+            </nav>
+        </div>
+    </header>
     <div class="conteudo">
         <h1 class="titulo-pagina">Country Clube</h1>
         <div class="carrossel">
