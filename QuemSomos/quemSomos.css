@@ -18,13 +18,14 @@ body::before {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
     padding-top: 9.375rem;
     margin: 0 2.5rem;
 }
 
 .img-grupo {
     width: 37.5rem;
-    height: 454px;
+    height: 28.375rem;
     border-radius: 20px;
     border: 0.25rem solid #FFF;
     opacity: calc(0.9);
@@ -34,7 +35,7 @@ body::before {
 .caixa-texto {
     background-color: #d3d3d3;
     border-radius: 20px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.50);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.50);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15pt;
     width: 37.5rem;
@@ -45,7 +46,34 @@ body::before {
     margin: 1rem;
 }
 
+@media(max-width: 1300px) {
+    .body-container {
+        flex-direction: column;
+    }
+    .img-grupo {
+        margin-bottom: 1rem;
+    }
+}
 
+@media(max-width: 710px) {
+    .body-container {
+        padding-top: 11.25rem;
+    }
+}
+
+@media(max-width: 630px) {
+    .body-container {
+        margin: 0;
+    }
+    .img-grupo {
+        width: 100%;
+    }
+
+    .caixa-texto {
+        width: 100%;
+        border-radius: 0;
+    }
+}
 
 
 
