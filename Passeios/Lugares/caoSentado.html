@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/components/Header/header.css">
     <style>
         body::before {
@@ -87,44 +88,42 @@
             alert("Formulario Enviado!");
         }
     </script>
-    <section class="caixa-texto">
-        <form>
-            <p> Dados Obrigatorios <abbr title="required">*</abbr>.</p>
+    <section class="form-container">
+        <form action="">
+            <p><h2> Formulario para Passeio </h2></p>
             <div>
-                <label for="CaoSentado">Name Completo:</label>
-                <input type="text" name="username" placeholder="Digite seu nome" />
+                <label for="CaoSentado">Nome Completo:</label>
+                <input class="campo-preencher" type="text" name="username" placeholder="Digite seu nome" />
                 <label for="CaoSentado">
-                    <abbr title="required">*</abbr>
                 </label>
             </div>
             <div>
                 <label for="CaoSentado">Telefone:</label>
-                <input type="tel" name="Telefone"placeholder="(99)123456789" />
+                <input class="campo-preencher" type="tel" name="Telefone"placeholder="(99)123456789" />
                 <label for="CaoSentado">
-                    <abbr title="required">*</abbr>
                 </label>
             </div>
             <div>
                 <label for="CaoSentado">Email:</label>
-                <input type="email" name="Email" placeholder="exemplo@exemplo.com" />
+                <input class="campo-preencher" type="email" name="Email" placeholder="exemplo@exemplo.com" />
                 <label for="CaoSentado">
-                    <abbr title="required">*</abbr>
+
                 </label>
             </div>
             <div>
                 <label for="CaoSentado">Data:</label>
-                <input type="date" name="date" />
+                <input class="campo-preencher" type="date" name="date" />
                 <label for="CaoSentado">
-                    <abbr title="required">*</abbr>
                 </label>
             </div>
+            <p>Tipo de passeio:</p>
             <p>
-                <label for="taste_1">Raffting</label>
-                <input type="checkbox" id="taste_1" name="raffting" value="1" />
-                <label for="taste_2">Acampamento</label>
-                <input type="checkbox" id="taste_2" name="acampamento" value="2" />
-                <label for="taste_3">Visita Turistica</label>
-                <input type="checkbox" id="taste_3" name="visita" value="3" />
+                <input class="checkbox" type="checkbox" id="tipo1" name="raffting" value="1" />
+                <label class="tipo-agendamento" for="tipo1">Raffting</label>
+                <input class="checkbox" type="checkbox" id="tipo2" name="acampamento" value="2" />
+                <label class="tipo-agendamento" for="tipo2">Acampamento</label>
+                <input class="checkbox" type="checkbox" id="tipo3" name="visita" value="3" />
+                <label class="tipo-agendamento" for="tipo3">Visita Turistica</label>
                 <label for="CaoSentado"></label>
             </p>
             <button
