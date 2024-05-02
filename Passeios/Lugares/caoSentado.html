@@ -89,7 +89,7 @@
         }
     </script>
     <section class="form-container">
-        <form action="">
+        <form id="form-api" action="">
             <p><h2> Formulario para Passeio </h2></p>
             <div>
                 <label for="CaoSentado">Nome Completo:</label>
@@ -127,12 +127,27 @@
                 <label for="CaoSentado"></label>
             </p>
             <button
-                type="button"
+                type="submit"
                 class="btn btn-outline-success"
                 onclick="cadastrar()"
             >Enviar</button>
             <p>Entraremos em contato para terminar o agendamento</p>
         </form>
     </section>
+    <script>
+        const formEl = document.getElementById('form-api');
+        formEl.addEventListener('submit', e => {
+            e.preventDefault();
+            const formData = new FormData(formEl);
+            const data = Object.fromEntries(formData);
+            fetch('http://localhost:8080/dados-do-cliente', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then(res => res.json()).then(data => console.log(data))
+        });
+    </script>
 </body>
 </html>
