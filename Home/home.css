@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     font: normal 15pt Arial;
-    font-size: 15pt;
 }
 
 body::before {
@@ -29,14 +28,18 @@ body::before {
 
 .title {
     font-family: "Roboto", sans-serif;
-    color: #dfdfdf;
+    color: #ffffff;
     font-weight: 100;
     font-style: normal;
     max-width: 100%;
     padding-bottom: 11vh;
     padding-top: 15vh;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(11, 75, 11, 0.5);
+    text-shadow:
+                -1px -1px 0 #64997c,
+                1px -1px 0 #64997c,
+                -1px  1px 0 #64997c,
+                4px  2px 0 #64997c;
 }
 
 .carousel-item img {
@@ -186,6 +189,12 @@ footer {
     #footer_content{
         grid-template-columns: repeat(2,1fr);
         gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .title {
+        padding-top: 11.25rem;
     }
 }
 
