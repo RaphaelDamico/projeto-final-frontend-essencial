@@ -244,5 +244,14 @@ footer {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .passeios-content{
+       width: 40%;
+    }
+}
 
-
+@media screen and (max-width: 800px) {
+    .passeios-content{
+       width: 60%;
+    }
+}

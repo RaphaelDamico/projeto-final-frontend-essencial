@@ -39,7 +39,7 @@ body {
 
 .carrossel {
     width: 50%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .slide {
@@ -276,5 +276,42 @@ footer {
     #footer_content{
         grid-template-columns: repeat(1,1fr);
         padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .conteudo{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slide {
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .conteudo {
+        padding-top: 11.25rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .conteudo {
+        margin: 0;
+    }
+    .slide {
+        width: 100%;
+    }
+
+    .texto {
+        width: 100%;
+        border-radius: 0;
     }
 }
