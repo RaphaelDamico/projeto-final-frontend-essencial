@@ -24,7 +24,7 @@ body::before {
     position: absolute;
     color: #fff;
     font-size: 3.0rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 2px;
     text-shadow:
                 -1px -1px 0 #64997c,
@@ -37,7 +37,8 @@ body::before {
 .conteudo {
     display: flex;
     justify-content: space-around;
-    padding-top: 32vh;
+    padding-top: 12.5rem;
+
 }
 
 .texto {
@@ -45,7 +46,7 @@ body::before {
     background: #d3d3d3;
     border-radius: 20px;
     padding: 0.9375rem;
-    width: 600px;
+    width: 37.5rem;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.50);
 }
 
@@ -252,11 +253,11 @@ footer {
 
 @media screen and (max-width: 1300px) {
     .conteudo{
-        padding-top: 9.375rem;
+        padding-top: 12.5rem;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
     .conteudo {
         flex-direction: column;
         align-items: center;
@@ -276,13 +277,21 @@ footer {
 }
 
 @media screen and (max-width: 710px) {
+    .titulo-pagina {
+        padding-top: 15.625rem;
+    }
     .conteudo {
-        padding-top: 11.25rem;
+        padding-top: 21.875rem;
     }
 }
 
 @media screen and (max-width: 620px) {
     .carrossel {
-        max-width: 30px;
+        width: 1.875rem;
+        margin-right: 420px;
+    }
+
+    .slide img {
+        width: 450px;
     }
 }
