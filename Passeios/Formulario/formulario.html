@@ -4,23 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/Home/assets/serratour-favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="formulario.css">
     <title>Formulário</title>
     <link rel="stylesheet" href="/components/Header/header.css">
-    <style>
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            width: 100vw;
-            height: 100vh;
-            background-image: url('/images/Background-pagina/background.jpg');
-            background-size: cover;
-            background-position: center;
-            filter: brightness(80%) contrast(80%) blur(0px) opacity(85%) grayscale(10%);
-            z-index: -1;
-        }
-    </style>
 </head>
 <body>
     <header class="headerContainer">
@@ -33,6 +22,7 @@
             </nav>
         </div>
     </header>
+    <di class="pagina-container">
     <section class="form-container">
         <form action="" id="form-api">
             <p><h2> FORMULÁRIO PARA CADASTRO </h2></p>
@@ -40,15 +30,15 @@
                 <div>
                     <div>
                         <label>Nome Completo:</label>
-                            <input class="campo-preencher" type="text" name="Nome completo" placeholder="Digite seu nome" />
+                            <input class="campo-preencher" type="text" name="Nome completo" placeholder="Digite seu nome" required/>
                     </div>
                     <div>
                         <label>Telefone:</label>
-                        <input class="campo-preencher" type="tel" name="Telefone"placeholder="(99)123456789" />
+                        <input class="campo-preencher" type="tel" name="Telefone"placeholder="(99)123456789" required/>
                     </div>
                     <div>
                         <label>Email:</label>
-                        <input class="campo-preencher" type="email" name="Email" placeholder="exemplo@exemplo.com" />
+                        <input class="campo-preencher" type="email" name="Email" placeholder="exemplo@exemplo.com" required/>
                     </div>
                     <div>
                         <label>Observação: </label>

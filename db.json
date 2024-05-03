@@ -22,6 +22,38 @@
       "Email": "jose@oliveira.com",
       "Observação": "Não",
       "Local": "Igreja do Adro"
+    },
+    {
+      "id": "f471",
+      "Nome completo": "João Augosto de Orleans e Bragança",
+      "Telefone": "2422478569",
+      "Email": "joao@braganca.com",
+      "Observação": "Tataraneto do imperador Dom Pedro II",
+      "Local": "Palácio de Cristal"
+    },
+    {
+      "id": "6d72",
+      "Nome completo": "Jose Oliveira Edmundo",
+      "Telefone": "2422558899",
+      "Email": "jo@se.com",
+      "Observação": "",
+      "Local": "Museu Imperial"
+    },
+    {
+      "id": "68ae",
+      "Nome completo": "João Augosto de Orleans e Bragança",
+      "Telefone": "24993225774",
+      "Email": "ze@pa.com",
+      "Observação": "",
+      "Local": "Poço Feio"
+    },
+    {
+      "id": "bbe9",
+      "Nome completo": "João Augosto de Orleans e Bragança",
+      "Telefone": "2222222222",
+      "Email": "eduardo12@gmail.com",
+      "Observação": "",
+      "Local": "Palácio de Cristal"
     }
   ]
 }
