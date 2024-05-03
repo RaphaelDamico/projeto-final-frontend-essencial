@@ -18,7 +18,7 @@ body::before {
 
 .title {
     font-family: "Roboto", sans-serif;
-    color: #ffffff;
+    color: white;
     font-weight: 100;
     font-style: normal;
     max-width: 100%;
@@ -169,6 +169,29 @@ footer {
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+}
+
+.fotoscarrossel{
+    width: 988px;
+    padding: 11% 20%;
+    background: border-box;
+    border-radius: 22%;
+}
+
+.carousel-inner{
+    margin-top: -150px;
+}
+
+.descricao{
+    text-shadow:
+                -1px -1px 0 #64997c,
+                1px -1px 0 #64997c,
+                -1px  1px 0 #64997c,
+                1px  -1px 0 #64997c;
+}
+
+.serratour{
+    color: aqua;
 }
 
 @media screen and (max-width: 768px) {
