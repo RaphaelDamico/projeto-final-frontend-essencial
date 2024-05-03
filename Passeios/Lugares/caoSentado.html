@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilo-passeio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/components/Header/header.css">
@@ -65,8 +65,71 @@
                 Além da sua beleza natural, o "Cão Sentado" também possui importância histórica e cultural para os habitantes da região,<br/>
                 sendo considerado um marco emblemático de Nova Friburgo e um símbolo da sua paisagem montanhosa.
             </p>
+            <p class="data-excursao">Datas disponíveis para excursão:<br/>11/05/2024<br/>25/05/2024</p>
+            <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                <a class="btn-form" href="/Passeios/Formulario/formulario.html">Quero conhecer</a>
+            </button>
         </div>
     </div>
+    
+    <div class= "div-mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59085.07844877707!2d-
+        42.545598120422106!3d-22.24700580933918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+        1s0x98278c12016d57%3A0x95e14aae5ff11e26!2sPedra%20do%20c%C3%A3o%20sentado!5e0!3m2!1spt-
+        BR!2sbr!4v1714620260723!5m2!1spt-BR!2sbr"width="1100" height="300" style="border-radius: .625rem;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Serratour</h1>
+                <p>O melhor da região serrana!</p>
+                <div id="footer-social-media">
+                    <a href="a" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    </a>
+                    <a href="a" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    </a>
+                    <a href="a" class="footer-link" id="github">
+                        <i class="fa-brands fa-github" style="color: #000000;"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Parcerias</h3>
+                </li>
+                <li>
+                    <a href="qa" class="footer-link">CordeiroTech</a>
+                </li>
+                <li>
+                    <a href="a" class="footer-link">PetrópolisTech</a>
+                </li>
+                <li>
+                    <a href="a" class="footer-link">FriburgoTech</a>
+                </li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Conecte-se conosco!</h3>
+                    <p>
+                        Digite seu email:
+                    </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div id="footer_copyright">
+                    &#169;
+                    2024 all rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
         let slideIndex = 0;
         const slides = document.querySelectorAll('.slide');
@@ -88,128 +151,6 @@
         function cadastrar(){
             alert("Formulario Enviado!");
         }
-    </script>
-    <section class="form-container">
-        <form action="">
-            <p><h2> Formulario para Passeio </h2></p>
-            <div>
-                <label for="CaoSentado">Nome Completo:</label>
-                <input class="campo-preencher" type="text" name="username" placeholder="Digite seu nome" />
-                <label for="CaoSentado">
-                </label>
-            </div>
-            <div>
-                <label for="CaoSentado">Telefone:</label>
-                <input class="campo-preencher" type="tel" name="Telefone"placeholder="(99)123456789" />
-                <label for="CaoSentado">
-                </label>
-            </div>
-            <div>
-                <label for="CaoSentado">Email:</label>
-                <input class="campo-preencher" type="email" name="Email" placeholder="exemplo@exemplo.com" />
-                <label for="CaoSentado">
-
-                </label>
-            </div>
-            <div>
-                <label for="CaoSentado">Data:</label>
-                <input class="campo-preencher" type="date" name="date" />
-                <label for="CaoSentado">
-                </label>
-            </div>
-            <div class= "div-flex1">
-            <p>
-                <input class="checkbox" type="checkbox" id="tipo1" name="raffting" value="1" />
-                <label class="tipo-agendamento" for="tipo1">Raffting</label>
-                <input class="checkbox" type="checkbox" id="tipo2" name="acampamento" value="2" />
-                <label class="tipo-agendamento" for="tipo2">Acampamento</label>
-                <input class="checkbox" type="checkbox" id="tipo3" name="visita" value="3" />
-                <label class="tipo-agendamento" for="tipo3">Visita Turistica</label>
-                <label for="CaoSentado"></label> 
-            </p></div>
-            <div class= "div-flex1">
-            <button
-                type="button"
-                class="btn btn-outline-success"
-                onclick="cadastrar()" 
-            >Enviar</button>
-            </div> 
-            <div class= "div-flex1">
-            <p>Entraremos em contato para terminar o agendamento</p>
-            </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59085.07844877707!2d-
-            42.545598120422106!3d-22.24700580933918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
-            1s0x98278c12016d57%3A0x95e14aae5ff11e26!2sPedra%20do%20c%C3%A3o%20sentado!5e0!3m2!1spt-
-            BR!2sbr!4v1714620260723!5m2!1spt-BR!2sbr"width="1100" height="300" style="border:0;" 
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </form>
-    </section>
-
-          <!-- Footer -->
-          <footer>
-            <div id="footer_content">
-                <div id="footer_contacts">
-                    <h1>Serratour</h1>
-                    <p>O melhor da região serrana!</p>
-                    <div id="footer-social-media">
-                        <a href="a" class="footer-link" id="instagram">
-                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                        </a>
-                        <a href="a" class="footer-link" id="facebook">
-                            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-                        </a>
-                        <a href="a" class="footer-link" id="github">
-                            <i class="fa-brands fa-github" style="color: #000000;"></i>
-                        </a>
-                    </div>
-                </div>
-                <ul class="footer-list">
-                    <li>
-                        <h3>Parcerias</h3>
-                    </li>
-                    <li>
-                        <a href="qa" class="footer-link">CordeiroTech</a>
-                    </li>
-                    <li>
-                        <a href="a" class="footer-link">PetrópolisTech</a>
-                    </li>
-                    <li>
-                        <a href="a" class="footer-link">FriburgoTech</a>
-                    </li>
-                </ul>
-                <div id="footer_subscribe">
-                    <h3>Conecte-se conosco!</h3>
-                        <p>
-                            Digite seu email:
-                        </p>
-                    <div id="input_group">
-                        <input type="email" id="email">
-                        <button>
-                            <i class="fa-regular fa-paper-plane"></i>
-                        </button>
-                    </div>
-                    <div id="footer_copyright">
-                        &#169;
-                        2024 all rights reserved.
-                    </div>
-                </div>
-            </div>
-        </footer>
-    <script>
-        const formEl = document.getElementById('form-api');
-        formEl.addEventListener('submit', e => {
-            e.preventDefault();
-            const formData = new FormData(formEl);
-            const data = Object.fromEntries(formData);
-            fetch('http://localhost:8080/dados-do-cliente', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            }).then(res => res.json()).then(data => console.log(data))
-        });
     </script>
 </body>
 </html>

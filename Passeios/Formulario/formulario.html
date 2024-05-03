@@ -1,55 +1,87 @@
-<section class="form-container">
-    <form action="">
-        <p><h2> Formulario para Passeio </h2></p>
-        <div>
-            <label for="CaoSentado">Nome Completo:</label>
-            <input class="campo-preencher" type="text" name="username" placeholder="Digite seu nome" />
-            <label for="CaoSentado">
-            </label>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Home/assets/serratour-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/components/Header/header.css">
+    <style>
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('/images/Background-pagina/background.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(80%) contrast(80%) blur(0px) opacity(85%) grayscale(10%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <header class="headerContainer">
+        <div class="headerContent">
+            <img class="logo-pagina" src="/Home/assets/logo-serra-tour.png" alt="logo da pagina" />
+            <nav>
+                <a class="link-nav" href="/Home/home.html">HOME</a>
+                <a class="link-nav" id="ativa" href="/Passeios/passeios.html">PASSEIOS</a>
+                <a class="link-nav"  href="/QuemSomos/quemSomos.html">QUEM SOMOS</a>
+            </nav>
         </div>
-        <div>
-            <label for="CaoSentado">Telefone:</label>
-            <input class="campo-preencher" type="tel" name="Telefone"placeholder="(99)123456789" />
-            <label for="CaoSentado">
-            </label>
-        </div>
-        <div>
-            <label for="CaoSentado">Email:</label>
-            <input class="campo-preencher" type="email" name="Email" placeholder="exemplo@exemplo.com" />
-            <label for="CaoSentado">
-
-            </label>
-        </div>
-        <div>
-            <label for="CaoSentado">Data:</label>
-            <input class="campo-preencher" type="date" name="date" />
-            <label for="CaoSentado">
-            </label>
-        </div>
-        <div class= "div-flex1">
-        <p>
-            <input class="checkbox" type="checkbox" id="tipo1" name="raffting" value="1" />
-            <label class="tipo-agendamento" for="tipo1">Raffting</label>
-            <input class="checkbox" type="checkbox" id="tipo2" name="acampamento" value="2" />
-            <label class="tipo-agendamento" for="tipo2">Acampamento</label>
-            <input class="checkbox" type="checkbox" id="tipo3" name="visita" value="3" />
-            <label class="tipo-agendamento" for="tipo3">Visita Turistica</label>
-            <label for="CaoSentado"></label>
-        <div class= "div-flex1">
-        <button
-            type="button"
-            class="btn btn-outline-success"
-            onclick="cadastrar()"
-        >Enviar</button>
-        </div>
-        <div class= "div-flex1">
-        <p>Entraremos em contato para terminar o agendamento</p>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59085.07844877707!2d-
-        42.545598120422106!3d-22.24700580933918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
-        1s0x98278c12016d57%3A0x95e14aae5ff11e26!2sPedra%20do%20c%C3%A3o%20sentado!5e0!3m2!1spt-
-        BR!2sbr!4v1714620260723!5m2!1spt-BR!2sbr"width="1100" height="300" style="border:0;" 
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </form>
-</section>
+    </header>
+    <section class="form-container">
+        <form action="" id="form-api">
+            <p><h2> FORMULÁRIO PARA CADASTRO </h2></p>
+            <div class="input-form-group">
+                <div>
+                    <div>
+                        <label>Nome Completo:</label>
+                            <input class="campo-preencher" type="text" name="Nome completo" placeholder="Digite seu nome" />
+                    </div>
+                    <div>
+                        <label>Telefone:</label>
+                        <input class="campo-preencher" type="tel" name="Telefone"placeholder="(99)123456789" />
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input class="campo-preencher" type="email" name="Email" placeholder="exemplo@exemplo.com" />
+                    </div>
+                    <div>
+                        <label>Observação: </label>
+                        <input class="campo-preencher" type="text" name="Observação" placeholder="Possui alguma necessidade especial" />
+                    </div>
+                </div>
+            </div>
+            <div class= "div-flex">
+                <h3>Local de Passeio:</h3>
+            <p>
+                <input class="checkbox" type="checkbox" id="tipo1" name="Local" value="Cão Sentado" />
+                <label class="tipo-agendamento" for="tipo1">Cão Sentado</label>
+                <input class="checkbox" type="checkbox" id="tipo2" name="Local" value="Igreja do Adro" />
+                <label class="tipo-agendamento" for="tipo2">Igreja Adro</label>
+                <input class="checkbox" type="checkbox" id="tipo3" name="Local" value="Poço Feio" />
+                <label class="tipo-agendamento" for="tipo3">Poço Feio</label>
+                <input class="checkbox" type="checkbox" id="tipo4" name="Local" value="Museu Imperial" />
+                <label class="tipo-agendamento" for="tipo4">Museu Imperial</label>
+                <input class="checkbox" type="checkbox" id="tipo5" name="Local" value="Palácio de Cristal" />
+                <label class="tipo-agendamento" for="tipo5">Palácio de Cristal</label>
+                <input class="checkbox" type="checkbox" id="tipo6" name="Local" value="Nova Friburgo Country Clube" />
+                <label class="tipo-agendamento" for="tipo6">Country Club</label>
+                </div>
+            <div class= "div-flex1">
+                <button
+                type="submit"
+                class="btn btn-outline-success"
+                onclick="cadastrar()"
+                >Enviar</button>
+                <p>Entraremos em contato através do seu e-mail para finalizarmos seu cadastro!</p>
+            </div>
+        </form>
+    </section>
+    <script src="script.js">
+    </script>
+</body>

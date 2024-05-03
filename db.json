@@ -1,3 +1,19 @@
 {
-    "dados-do-cliente": []
-  }
+  "dados-do-cliente": [
+    {
+      "id": "a811",
+      "username": "Zepa",
+      "Telefone": "2222222222",
+      "Email": "ze@pa.com",
+      "date": "2024-05-20"
+    },
+    {
+      "id": "78c6",
+      "username": "Eduardo Luis",
+      "Telefone": "(24)22458980",
+      "Email": "eduardo12@gmail.com",
+      "date": "Cadeirante",
+      "Igreja Adro": "2"
+    }
+  ]
+}
