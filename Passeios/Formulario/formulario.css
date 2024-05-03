@@ -10,7 +10,7 @@ body{
     max-width: 1100px;
     margin: 50px auto;
     padding: 0.125rem 4.25rem;
-    background-color: #3d9163;
+    background-color: #40897f;
     border-radius: 20px;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.50);
     margin-top: 20vh;
@@ -85,4 +85,12 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+@media screen and (max-width: 710px) {
+    .form-container {
+        margin-top: 35vh ;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
 }

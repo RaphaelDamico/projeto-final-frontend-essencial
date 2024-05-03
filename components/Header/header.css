@@ -75,8 +75,8 @@ a ~ a {
     }
 }
 
-@media (max-width: 359px) {
-    a {
-        font-size: 13pt;
+@media screen and (max-width: 390px) {
+    .link-nav {
+        font-size: 13px;
     }
 }

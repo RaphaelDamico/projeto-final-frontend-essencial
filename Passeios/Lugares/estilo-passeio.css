@@ -4,6 +4,18 @@ body {
     font-size: 1.15rem;
 }
 
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/Background-pagina/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%) contrast(80%) blur(0px) opacity(85%) grayscale(10%);
+    z-index: -1;
+}
+
 .titulo-pagina {
     top: 20vh;
     left: 50vw;
@@ -38,7 +50,7 @@ body {
 }
 
 .carrossel {
-    width: 50%;
+    width: 50vw;
     overflow: visible;
 }
 
@@ -49,10 +61,10 @@ body {
 
 .slide img {
     background: rgb(255, 253, 191);
-    width: 600px;
-    height: 470px;
+    width: 37.5rem;
+    height: 29.375rem;
     border-radius: 50px;
-    padding: 5px;
+    padding: 0.3125rem;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.50);
 }
 
@@ -249,7 +261,16 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .carrossel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 37.5rem;
+    }
+
     .slide {
+        justify-content: center;
+        align-items: center;
         margin-bottom: 5rem;
     }
 }
@@ -260,16 +281,8 @@ footer {
     }
 }
 
-@media screen and (max-width: 630px) {
-    .conteudo {
-        margin: 0;
-    }
-    .slide {
-        width: 100%;
-    }
-
-    .texto {
-        width: 100%;
-        border-radius: 0;
+@media screen and (max-width: 620px) {
+    .carrossel {
+        max-width: 30px;
     }
 }

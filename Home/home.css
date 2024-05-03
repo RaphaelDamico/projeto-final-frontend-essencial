@@ -16,16 +16,6 @@ body::before {
     z-index: -1;
 }
 
-.conteiner{
-    background-color: #f7f7f7;
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-
 .title {
     font-family: "Roboto", sans-serif;
     color: #ffffff;
@@ -33,7 +23,7 @@ body::before {
     font-style: normal;
     max-width: 100%;
     padding-bottom: 11vh;
-    padding-top: 15vh;
+    padding-top: 20vh;
     text-align: center;
     text-shadow:
                 -1px -1px 0 #64997c,
@@ -42,12 +32,6 @@ body::before {
                 4px  2px 0 #64997c;
 }
 
-.carousel-item img {
-    margin: auto;
-    max-width: 100%;
-    padding-bottom: 20vh;
-    display: block;
-}
 :root {
     --neutral-color-1: #6b6a6a;
     --neutral-color-2: #cccccc;
