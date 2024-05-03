@@ -171,13 +171,6 @@ footer {
     font-weight: 100;
 }
 
-.fotoscarrossel{
-    width: 988px;
-    padding: 11% 20%;
-    background: border-box;
-    border-radius: 22%;
-}
-
 .carousel-inner{
     margin-top: -150px;
 }
