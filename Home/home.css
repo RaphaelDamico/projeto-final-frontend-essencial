@@ -30,7 +30,9 @@ body::before {
                 1px -1px 0 #64997c,
                 -1px  1px 0 #64997c,
                 4px  2px 0 #64997c;
+    transition: 2s;
 }
+
 
 :root {
     --neutral-color-1: #6b6a6a;
